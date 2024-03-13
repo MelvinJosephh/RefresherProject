@@ -1,0 +1,7 @@
+<div *ngIf="allLocations$ | async as locations">
+  <ul>
+    <li *ngFor="let location of locations">
+      <h2>{{ location.name }}</h2>
+    </li>
+  </ul>
+</div>
